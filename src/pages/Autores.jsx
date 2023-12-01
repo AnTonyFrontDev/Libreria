@@ -7,7 +7,7 @@ const [autores, setAutores] = useState([]);
 
 useEffect(() => {
     // Haciendo la llamada a la API para los autores con Axios
-    axios.get('http://127.0.0.1:8000/libreria/author')
+    axios.get('https://nodelibreria.onrender.com/libreria/author')
         .then(response => setAutores(response.data))
         .catch(error => console.error('Error fetching data:', error));
     }, []);

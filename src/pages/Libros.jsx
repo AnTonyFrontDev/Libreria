@@ -7,7 +7,7 @@ const TitulosList = () => {
 
   useEffect(() => {
     // Haciendo la llamada a la API con Axios
-    axios.get('http://127.0.0.1:8000/libreria/libro')
+    axios.get('https://nodelibreria.onrender.com/libreria/libro')
       .then(response => setTitulos(response.data))
       .catch(error => console.error('Error fetching data:', error));
   }, []);
